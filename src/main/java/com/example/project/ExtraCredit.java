@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ExtraCredit {
 
     public static String calculateTip(int people, int percent, double cost, String items) {
+        
         StringBuilder result = new StringBuilder();              
         result.append("-------------------------------\n");
         result.append(String.format("Total bill before tip: $%.2f\n", cost));
@@ -43,6 +44,7 @@ public class ExtraCredit {
         double cost;
         String items;
 
+        
         System.out.print("Enter the number of people: ");
         people = scan.nextInt();
 
@@ -52,7 +54,7 @@ public class ExtraCredit {
         System.out.print("Enter the total cost: ");
         cost = scan.nextDouble();
 
-        scan.nextLine(); // Consume newline
+        scan.nextLine(); 
         System.out.print("Enter the items ordered: ");
         items = scan.nextLine();
         
